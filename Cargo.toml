@@ -1,0 +1,27 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/tensor",
+    "crates/core",
+    "crates/nn",
+    "crates/optim",
+    "crates/data",
+    "crates/viz",
+    "examples",
+]
+
+[workspace.dependencies]
+bevy_ecs = { git = "https://github.com/bevyengine/bevy", rev = "6de2d06", default-features = false, features = ["multi_threaded"] }
+bevy_app = { git = "https://github.com/bevyengine/bevy", rev = "6de2d06", default-features = false }
+rand = "0.9"
+ecs-ml-tensor = { path = "crates/tensor" }
+ecs-ml-core = { path = "crates/core" }
+ecs-ml-nn = { path = "crates/nn" }
+ecs-ml-optim = { path = "crates/optim" }
+ecs-ml-data = { path = "crates/data" }
+ecs-ml-viz = { path = "crates/viz" }
+ratatui = "0.30"
+crossterm = "0.28"
+
+[profile.dev]
+opt-level = 2

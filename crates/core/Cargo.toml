@@ -1,0 +1,10 @@
+[package]
+name = "ecs-ml-core"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy_ecs = { workspace = true }
+bevy_app = { workspace = true }
+ecs-ml-tensor = { workspace = true }
+rand = { workspace = true }

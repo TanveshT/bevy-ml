@@ -1,0 +1,12 @@
+[package]
+name = "ecs-ml-viz"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+bevy_ecs = { workspace = true }
+bevy_app = { workspace = true }
+ecs-ml-core = { workspace = true }
+ratatui = { workspace = true }
+crossterm = { workspace = true }
+signal-hook = "0.3"

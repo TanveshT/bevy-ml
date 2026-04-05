@@ -1,0 +1,4 @@
+/target
+/data
+python/.venv/
+python/comparison_results.json

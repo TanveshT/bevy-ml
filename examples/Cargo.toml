@@ -1,0 +1,23 @@
+[package]
+name = "ecs-ml-examples"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "mnist_mlp"
+path = "mnist_mlp.rs"
+
+[[bin]]
+name = "mnist_cnn"
+path = "mnist_cnn.rs"
+
+
+[dependencies]
+bevy_app = { workspace = true }
+bevy_ecs = { workspace = true }
+ecs-ml-tensor = { workspace = true }
+ecs-ml-core = { workspace = true }
+ecs-ml-nn = { workspace = true }
+ecs-ml-optim = { workspace = true }
+ecs-ml-data = { workspace = true }
+ecs-ml-viz = { workspace = true }
